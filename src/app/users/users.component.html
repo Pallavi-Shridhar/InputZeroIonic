@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      List of Users
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row >
+    <ion-col>Id</ion-col>
+    <ion-col>First Name</ion-col>
+    <ion-col>Last Name</ion-col>
+    <ion-col>Email</ion-col>
+    <ion-col>Avatar</ion-col>  
+  </ion-row>
+  <ion-list *ngFor="let user of users">
+  <ion-row>
+    <ion-col>{{user.id}}</ion-col>
+    <ion-col>{{user.first_name}}</ion-col>
+    <ion-col>{{user.last_name}}</ion-col>
+    <ion-col>{{user.email}}</ion-col>
+    <ion-col>{{user.avatar}}</ion-col>
+  </ion-row>
+</ion-list>
+</ion-content>

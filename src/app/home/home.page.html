@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Email" [(ngModel)]="form.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Password" type="password" [(ngModel)]="form.password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button color="light" (click)="login()">Log in</button>
+</ion-content>
